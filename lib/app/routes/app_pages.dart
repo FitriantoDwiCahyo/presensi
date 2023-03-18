@@ -6,6 +6,8 @@ import 'package:presensi/app/modules/home/bindings/home_binding.dart';
 import 'package:presensi/app/modules/home/views/home_view.dart';
 import 'package:presensi/app/modules/login/bindings/login_binding.dart';
 import 'package:presensi/app/modules/login/views/login_view.dart';
+import 'package:presensi/app/modules/password/bindings/password_binding.dart';
+import 'package:presensi/app/modules/password/views/password_view.dart';
 
 part 'app_routes.dart';
 
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.LOGIN,
       page: () => LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: _Paths.PASSWORD,
+      page: () => PasswordView(),
+      binding: PasswordBinding(),
     ),
   ];
 }

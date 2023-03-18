@@ -15,7 +15,7 @@ class LoginView extends GetView<LoginController> {
       body: ListView(
         padding: const EdgeInsets.all(24),
         children: [
-          TextField(
+          TextField(autocorrect: false,
             controller: controller.emailC,
             decoration: const InputDecoration(
               border: OutlineInputBorder(),
@@ -25,7 +25,7 @@ class LoginView extends GetView<LoginController> {
           const SizedBox(
             height: 18,
           ),
-          TextField(
+          TextField(autocorrect: false,
             controller: controller.passC,
             obscureText: true,
             decoration: const InputDecoration(
